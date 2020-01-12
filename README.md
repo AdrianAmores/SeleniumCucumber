@@ -5,7 +5,7 @@ The framework is built with **Selenium (Java)**, **Cucumber**, **JUnit** and **E
 
 Created and designed for curriculum and HR recruiters.
 
-### Prerequisites
+### First Step
 You must have the **Java JDK** and **Maven** installed. [Tutorial.](https://www.mkyong.com/maven/how-to-install-maven-in-windows/)
 
 ## Running the tests
