@@ -25,7 +25,6 @@ public class CartPage {
         Wait.untilPageLoadComplete(driver);
         btn_checkcart.click();
         Assert.assertEquals("2", driver.findElement(By.xpath("//span[@id='nav-cart-count']")).getAttribute("innerText"));
-        driver.quit();
-    }
+            }
 
 }
