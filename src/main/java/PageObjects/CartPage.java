@@ -1,6 +1,8 @@
 package PageObjects;
 
 import WebDriverWait.Wait;
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,9 +22,10 @@ public class CartPage {
     private WebElement btn_checkcart;
 
     public void btn_clickcheckcart(){
-        //Assert.assertEquals("2", driver.findElement(By.xpath("//span[@id='nav-cart-count']")).getAttribute("innerText"));
         Wait.untilPageLoadComplete(driver);
         btn_checkcart.click();
+        Assert.assertEquals("2", driver.findElement(By.xpath("//span[@id='nav-cart-count']")).getAttribute("innerText"));
+        driver.quit();
     }
 
 }
